@@ -1,0 +1,18 @@
+﻿// AtlSvcShare.idl: AtlSvcShare의 IDL 소스
+//
+
+// 이 파일은 MIDL 도구에 의해 처리되어
+// 형식 라이브러리(AtlSvcShare.tlb) 및 마샬링 코드를 생성합니다.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(f322cce4-9ff4-41c1-a0b4-6b11faf3e49a),
+	version(1.0),
+]
+library AtlSvcShareLib
+{
+	importlib("stdole2.tlb");
+};
+

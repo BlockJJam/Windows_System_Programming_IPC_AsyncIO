@@ -15,34 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="MMFCopy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="WaitsForInputIdle.cpp">
+    <ClCompile Include="EventShareMem.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="InheritTest.cpp">
+    <ClCompile Include="ShareMemRw.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DuplicateHandle.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ShareWithName.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ShareWithName2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="EventShareFile.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="MsgShareFile.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="MsgWmCopy.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="AtlCliApc.cpp">
+    <ClCompile Include="ShareMemDup.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="MmfConsole.cpp">

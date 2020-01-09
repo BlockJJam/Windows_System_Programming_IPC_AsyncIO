@@ -1,0 +1,18 @@
+﻿// AtlSvcRun.idl: AtlSvcRun의 IDL 소스
+//
+
+// 이 파일은 MIDL 도구에 의해 처리되어
+// 형식 라이브러리(AtlSvcRun.tlb) 및 마샬링 코드를 생성합니다.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(32953f0d-2880-4d72-b01f-01d82794eb9b),
+	version(1.0),
+]
+library AtlSvcRunLib
+{
+	importlib("stdole2.tlb");
+};
+
