@@ -171,6 +171,15 @@ public :
 
 		return S_OK;
 	}
+
+	CAtlSvcMmfModule()
+	{
+		m_dwMsgId = 0;
+		m_hevExit = m_hevSend = m_hevResp =
+			m_hseRefs = m_hseRefs = NULL;
+		m_pView = NULL;
+	}
+
 	void OnStop();
 	HRESULT PreMessageLoop(int nShowCmd);
 	HRESULT PostMessageLoop() throw();
@@ -326,6 +335,9 @@ HANDLE CAtlSvcMmfModule::SpawnProcess()
 		);
 		if (!bIsOK)
 			throw GetLastError();
+
+		CloseHandle(pi.hThread);
+		CloseHandle(hToken);
 	}
 	catch (DWORD e)
 	{
@@ -469,6 +481,7 @@ void CAtlSvcMmfModule::RunMessageLoop()
 {
 	TP_CALLBACK_ENVIRON ce;
 	InitializeThreadpoolEnvironment(&ce);
+
 	PTP_POOL pPool = NULL;
 	PTP_CLEANUP_GROUP pCG = NULL;
 	try

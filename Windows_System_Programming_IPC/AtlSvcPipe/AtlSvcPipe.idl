@@ -1,0 +1,18 @@
+﻿// AtlSvcPipe.idl: AtlSvcPipe의 IDL 소스
+//
+
+// 이 파일은 MIDL 도구에 의해 처리되어
+// 형식 라이브러리(AtlSvcPipe.tlb) 및 마샬링 코드를 생성합니다.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(ece55d59-775a-4e58-948a-a50a2e179e73),
+	version(1.0),
+]
+library AtlSvcPipeLib
+{
+	importlib("stdole2.tlb");
+};
+
